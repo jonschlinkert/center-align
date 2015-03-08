@@ -14,8 +14,35 @@ npm i center-align --save
 var centerAlign = require('center-align');
 ```
 
+**Example**
+
+If used on the following:
+
+```
+Lorem ipsum dolor sit amet,
+consectetur adipiscing
+elit, sed do eiusmod tempor incididunt
+ut labore et dolore
+magna aliqua. Ut enim ad minim
+veniam, quis
+```
+
+The result would be:
+
+```
+     Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+elit, sed do eiusmod tempor incididunt
+         ut labore et dolore
+    magna aliqua. Ut enim ad minim
+             veniam, quis
+```
+
 ## Related projects
-{%= related(['right-align', 'align-text', 'justify', 'word-wrap']) %}  
+* [right-align](https://github.com/jonschlinkert/right-align): Right-align the text in a string.
+* [align-text](https://github.com/jonschlinkert/align-text): Align the text in a string.
+* [justify](https://github.com/bahamas10/node-justify): Left or right (or both) justify text using a custom width and character
+* [word-wrap](https://github.com/jonschlinkert/word-wrap): Wrap words to a specified length.  
 
 ## Running tests
 Install dev dependencies.

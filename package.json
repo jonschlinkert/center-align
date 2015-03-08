@@ -1,7 +1,7 @@
 {
   "name": "center-align",
   "description": "Center-align the text in a string.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/center-align",
   "author": {
     "name": "Jon Schlinkert",
