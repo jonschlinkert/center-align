@@ -7,10 +7,10 @@
 
 'use strict';
 
-var align = require('align-text');
+var utils = require('./utils');
 
 module.exports = function centerAlign(val) {
-  return align(val, function (len, longest) {
+  return utils.align(val, function (len, longest) {
     return Math.floor((longest - len) / 2);
   });
 };

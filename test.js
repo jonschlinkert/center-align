@@ -7,8 +7,8 @@
 
 'use strict';
 
+require('mocha');
 var assert = require('assert');
-var should = require('should');
 var centerAlign = require('./');
 
 var fixture = [
@@ -31,10 +31,10 @@ var expected = [
 
 describe('centerAlign', function () {
   it('should center align the strings in an array of strings:', function () {
-    centerAlign(fixture).should.eql(expected);
+    assert.deepEqual(centerAlign(fixture), expected);
   });
 
   it('should center align the lines in a string:', function () {
-    centerAlign(fixture.join('\n')).should.eql(expected.join('\n'));
+    assert.equal(centerAlign(fixture.join('\n')), expected.join('\n'));
   });
 });
