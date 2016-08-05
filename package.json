@@ -25,6 +25,7 @@
     "lazy-cache": "^2.0.1"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.10",
     "mocha": "^3.0.1"
   },
   "keywords": [
@@ -39,13 +40,27 @@
   ],
   "verb": {
     "related": {
-      "description": "",
       "list": [
         "align-text",
-        "right-align",
         "justified",
+        "right-align",
         "word-wrap"
       ]
-    }
+    },
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
   }
 }
