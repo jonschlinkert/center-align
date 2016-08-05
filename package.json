@@ -21,11 +21,11 @@
     "test": "mocha"
   },
   "dependencies": {
-    "align-text": "^0.1.3",
-    "lazy-cache": "^1.0.3"
+    "align-text": "^0.1.4",
+    "lazy-cache": "^2.0.1"
   },
   "devDependencies": {
-    "mocha": "^2.2.0"
+    "mocha": "^3.0.1"
   },
   "keywords": [
     "align",
