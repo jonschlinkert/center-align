@@ -10,8 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "utils.js"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -22,11 +21,11 @@
   },
   "dependencies": {
     "align-text": "^0.1.4",
-    "lazy-cache": "^2.0.1"
+    "repeat-string": "^1.6.1"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.10",
-    "mocha": "^3.0.1"
+    "gulp-format-md": "^0.1.12",
+    "mocha": "^3.4.2"
   },
   "keywords": [
     "align",
@@ -39,14 +38,6 @@
     "typography"
   ],
   "verb": {
-    "related": {
-      "list": [
-        "align-text",
-        "justified",
-        "right-align",
-        "word-wrap"
-      ]
-    },
     "toc": false,
     "layout": "default",
     "tasks": [
@@ -55,12 +46,16 @@
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "align-text",
+        "justified",
+        "right-align",
+        "word-wrap"
+      ]
+    },
     "lint": {
       "reflinks": true
-    },
-    "reflinks": [
-      "verb",
-      "verb-generate-readme"
-    ]
+    }
   }
 }

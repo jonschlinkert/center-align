@@ -7,10 +7,19 @@
 
 'use strict';
 
-var utils = require('./utils');
+var repeat = require('repeat-string');
+var align = require('align-text');
 
-module.exports = function centerAlign(val) {
-  return utils.align(val, function (len, longest) {
+module.exports = function(val, width) {
+  if (typeof width === 'number' && typeof val === 'string' && !/\n/.test(val)) {
+    var padding = Math.floor((width - val.length) / 2);
+    return repeat(' ', padding) + val + repeat(' ', padding);
+  }
+
+  return align(val, function(len, longest) {
+    if (typeof width === 'number') {
+      return Math.floor((width - len) / 2);
+    }
     return Math.floor((longest - len) / 2);
   });
 };
