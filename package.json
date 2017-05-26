@@ -20,7 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "align-text": "^0.1.4",
+    "align-text": "^1.0.0",
     "repeat-string": "^1.6.1"
   },
   "devDependencies": {
